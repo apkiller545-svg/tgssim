@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>TON GIFTS Simulator V9.6</title>
+<title>TON GIFTS Simulator V9.8.1 ENGLISH FIX</title>
 <style>
 :root{--bg:#090e19;--panel:#121d30;--panel2:#182740;--line:#293b58;--text:#eef5ff;--muted:#95a8c5;--cyan:#53d9ff;--green:#5ce5a6;--gold:#ffd16c;--red:#ff7288}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 18% -10%,#17395d 0,transparent 43%),var(--bg);color:var(--text);font:15px/1.45 system-ui,Arial,sans-serif}
@@ -33,7 +33,7 @@ input:focus,select:focus{outline:2px solid #53d9ff55;border-color:var(--cyan)}
 .nft-serial.rare-id{color:#ffd16c;font-weight:800;text-shadow:0 0 10px #ffbf4a66}
 .rare-id-badge{display:inline-block;margin-left:5px;padding:2px 6px;border-radius:7px;background:linear-gradient(120deg,#6c4b13,#bd8c2b);color:#fff1bd;font-size:10px;font-weight:800;vertical-align:2px}
 .nft-buy.is-added{background:#155b49;color:#baffdf}
-.cart-fab{display:none;position:fixed;right:20px;bottom:20px;z-index:15;border:1px solid #70dfff;background:linear-gradient(135deg,#087da9,#3e58bb);border-radius:18px;padding:13px 17px;box-shadow:0 8px 28px #0009;font-size:17px}
+.cart-fab{display:block;position:fixed;right:20px;bottom:20px;z-index:9999;border:1px solid #70dfff;background:linear-gradient(135deg,#087da9,#3e58bb);border-radius:18px;padding:13px 17px;box-shadow:0 8px 28px #0009;font-size:17px}
 .cart-fab.visible{display:block}.cart-count{display:inline-grid;place-items:center;min-width:22px;height:22px;margin-left:6px;padding:0 5px;border-radius:99px;background:#ff7288;color:white;font-size:12px}
 .cart-list{max-height:55vh;overflow:auto}.cart-item{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:11px 0;border-bottom:1px solid #293b58}.cart-item:last-child{border:0}
 @media(max-width:620px){.cart-fab{right:12px;bottom:12px;padding:11px 14px}.cart-list{max-height:50vh}}
@@ -64,10 +64,12 @@ input:focus,select:focus{outline:2px solid #53d9ff55;border-color:var(--cyan)}
 :root{--bg:#090909;--panel:#171613;--panel2:#211e16;--line:#514323;--text:#fff8e7;--muted:#b8ad91;--cyan:#f5c542;--green:#d9f27a;--gold:#f6c945;--red:#ff7777}
 html{scroll-behavior:smooth}body{background:radial-gradient(ellipse at 12% -8%,#594512 0,transparent 34%),radial-gradient(ellipse at 92% 18%,#29200b 0,transparent 32%),#090909;color:var(--text);font-family:Inter,system-ui,-apple-system,Arial,sans-serif;letter-spacing:.1px}
 header{background:rgba(12,11,8,.92);border-bottom:1px solid #6b5520;box-shadow:0 8px 28px #0008;padding:14px max(18px,calc((100vw - 1240px)/2));}
+.header-notice{flex:1;text-align:center;color:#ffe39a;font-size:13px;font-weight:750;letter-spacing:.15px;padding:8px 12px;border:1px solid #6b5520;border-radius:12px;background:linear-gradient(135deg,#211a0b,#17130a);white-space:nowrap;}
 .logo{font-size:19px;letter-spacing:2px}.logo span{color:#ffd34e;text-shadow:0 0 18px #f2c23c55}.badge,.pill{border-color:#8b7028;background:#33280f;color:#ffdc72}
 .wallet{color:#c9bd9d}.wallet b{color:#ffe078;font-size:19px}.gold,button.gold{background:linear-gradient(135deg,#ffe58a,#d69c20);border:1px solid #ffe18a;color:#211707;box-shadow:0 5px 18px #d69c2033}
 button{background:linear-gradient(145deg,#282319,#17150f);border:1px solid #5a4924;color:#fff4d4;border-radius:13px;transition:transform .12s ease,border-color .12s ease,filter .12s ease;box-shadow:0 4px 12px #0003}button:hover{border-color:#f4c84d;filter:brightness(1.12);transform:translateY(-1px)}button:active{transform:scale(.98)}.primary{background:linear-gradient(120deg,#e2ad2e,#ffdf72);color:#211707;border:0}.success{background:linear-gradient(120deg,#43521e,#71852b);border:1px solid #9ebc50;color:#f8ffdb}
 input,select{background:#17150f;color:#fff4d4;border:1px solid #594820;border-radius:12px}input:focus,select:focus{outline:2px solid #e8bb3e55;border-color:#e8bb3e}
+#sort{display:none!important}
 main{max-width:1280px;margin:26px auto;padding:0 18px}.hero{position:relative;overflow:hidden;padding:clamp(22px,4vw,38px);border:1px solid #846824;border-radius:25px;background:linear-gradient(115deg,#3b2d0d 0%,#211b0d 52%,#15130e 100%);box-shadow:0 18px 48px #0007;margin-bottom:22px}.hero:after{content:'✦';position:absolute;right:7%;top:-40px;font-size:190px;color:#ffd65b12;pointer-events:none}.hero h1{font-size:clamp(27px,4vw,42px);letter-spacing:-1px;color:#fff3c9}.hero p{color:#d0c29d}.hero>div:last-child{position:relative;z-index:1;background:#100e09a8;border:1px solid #715a25;border-radius:18px;padding:14px 18px;min-width:155px}.hero>div:last-child>b{font-size:22px;color:#ffdc72}
 .tabs{gap:9px;margin:20px 0 24px;padding:7px;background:#14120d;border:1px solid #3c321c;border-radius:17px;width:max-content;max-width:100%}
 /* Mini-games development notice and advanced NFT filters */
@@ -133,6 +135,7 @@ button:focus-visible, input:focus-visible, select:focus-visible {
     padding: 9px max(12px, env(safe-area-inset-left)) 9px max(12px, env(safe-area-inset-right));
   }
   .logo { font-size: 15px; letter-spacing: 1px; }
+  .header-notice { order: 3; flex: 1 0 100%; white-space: normal; padding: 5px 8px; font-size: 11px; }
   .logo .badge { font-size: 10px; padding: 3px 6px; }
   .wallet { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 13px; }
   .wallet b { font-size: 15px; }
@@ -191,7 +194,7 @@ button:focus-visible, input:focus-visible, select:focus-visible {
   .cart-fab {
     right: 12px;
     bottom: max(12px, env(safe-area-inset-bottom));
-    z-index: 14;
+    z-index: 9999;
     min-height: 46px;
   }
 }
@@ -235,19 +238,30 @@ button:focus-visible, input:focus-visible, select:focus-visible {
   }
 }
 
+/* Mini-games development modal polish */
+.dev-modal{position:relative;overflow:hidden;text-align:center;padding:27px 12px 22px;animation:devPop .48s cubic-bezier(.2,.9,.25,1.25) both}
+.dev-modal:before{content:"";position:absolute;width:230px;height:230px;left:50%;top:-145px;transform:translateX(-50%);border-radius:50%;background:#f6c94518;filter:blur(8px);pointer-events:none}
+.dev-tool{position:relative;font-size:54px;display:block;margin:0 auto 15px;filter:drop-shadow(0 0 14px #f4c84d66);animation:toolWiggle 1.25s ease-in-out infinite}
+.dev-title{position:relative;font-size:clamp(22px,5vw,30px);font-weight:950;letter-spacing:-.5px;color:#ffdc72;text-shadow:0 0 22px #f4c84d55}
+.dev-sub{max-width:340px;margin:10px auto 0;color:#c7b994;line-height:1.55}
+.dev-progress{height:6px;max-width:230px;margin:22px auto 0;overflow:hidden;border-radius:99px;background:#514323}
+.dev-progress span{display:block;width:38%;height:100%;border-radius:99px;background:linear-gradient(90deg,#c99420,#ffe58a);animation:devLoading 2.1s ease-in-out infinite}
+.dev-caption{margin-top:13px;color:#927c4a;font-size:12px;font-weight:750;letter-spacing:.4px}
+@keyframes devLoading{0%{transform:translateX(-110%)}100%{transform:translateX(370%)}}
+@media(prefers-reduced-motion:reduce){.dev-tool,.dev-progress span{animation:none!important}}
 </style></head>
 <body>
-<header><div class="logo">TON <span>GIFTS</span> <small class="badge">SIMULATOR V8.0</small></div><div class="wallet">Баланс: <b id="balance">0 TON</b> <button id="addFunds" class="gold">＋ TON</button></div></header>
+<header><div class="logo">TON <span>GIFTS</span> <small class="badge">SIMULATOR V9.8.1</small></div><div class="header-notice">Это всего лишь симулятор и никак не связан с Telegram.</div><button id="settingsButton" class="settings-button" type="button" aria-label="Настройки" title="Настройки" onclick="openSettings()">⚙</button><div class="wallet">Баланс: <b id="balance">0 TON</b> <button id="addFunds" class="gold">＋ TON</button></div></header>
 <main>
 <section class="hero"><div><span class="badge">NFT MARKET · TON ONLY</span><h1>Твой NFT-маркет в золотом стиле</h1><p>Открывай коллекции, собирай редкие подарки и управляй своими сделками.</p></div><div><b id="ownedCount">0 NFT</b><div class="hint">в твоём инвентаре</div><div class="hint" id="dropCountdown">Следующий дроп: 01:00</div></div></section>
 <div class="tabs"><button class="tab active" data-tab="market">🛒 Маркет</button><button class="tab" data-tab="inventory">🎁 Инвентарь <span id="offerBadge"></span></button><button class="tab" data-tab="auctions">🔨 Аукционы</button><button class="tab" data-tab="profile">👤 Профиль</button><button class="tab" data-tab="activity">📜 История</button><button class="tab" data-tab="minigames">🎮 Мини-игры</button><button class="tab" data-tab="admin" onclick="openAdminGate()">🛠 Админ</button></div>
 <section id="market" class="pane"><div class="section-title"><h2>Новые NFT в маркете</h2><span class="muted">Динамические цены · NPC-покупатели · комиссия 2%</span></div><div class="market-stats"><div class="market-stat"><span>Лотов в продаже</span><b id="marketLots">—</b></div><div class="market-stat"><span>Средняя цена</span><b id="marketAverage">—</b></div><div class="market-stat"><span>Рыночный индекс</span><b id="marketIndex">100.0</b></div><div class="market-stat"><span>Сделок за сессию</span><b id="sessionVolume">0</b></div></div><div class="formrow"><input id="search" placeholder="Найти NFT…"><select id="sort"><option value="new">Новые сначала</option><option value="low">Дешевле</option><option value="high">Дороже</option></select><button class="primary" onclick="openNftFilters()">⚙ Фильтры NFT</button></div><div id="marketGrid" class="grid" style="margin-top:13px"></div></section>
-<section id="inventory" class="pane hidden"><div class="section-title"><h2>Мои NFT</h2><span class="muted">Не выставляются в общий маркет</span></div><div class="notice">Твои NFT не попадают в общий маркет. Выставляй каждый NFT по своей цене — коллекционеры будут присылать личные предложения, которые можно принять, отклонить или обсудить.</div><div id="inventoryGrid" class="grid"></div><div class="section-title"><h2>Входящие предложения</h2><span class="muted">Покупатели пишут тебе напрямую</span></div><div id="offersBox" class="box"></div></section>
+<section id="inventory" class="pane hidden"><div class="section-title"><h2>Мои NFT</h2><span class="muted">Не выставляются в общий маркет</span></div><div class="notice">Твои NFT не попадают в общий маркет. Выставляй каждый NFT по своей цене — коллекционеры будут присылать личные предложения, которые можно принять, отклонить или обсудить.</div><div id="inventoryGrid" class="grid"></div><div class="section-title"><h2>Входящие предложения</h2><span class="muted">Боты пишут только после выставления NFT на продажу</span></div><div id="offersBox" class="box"></div></section>
 <section id="auctions" class="pane hidden"><div class="section-title"><h2>Аукционы</h2><button class="primary" id="createAuction">＋ Выставить NFT</button></div><div class="notice">Боты автоматически участвуют в торгах. Перебитая ставка возвращается участнику. Если ставка сделана за последние 15 секунд, таймер продлевается на 15 секунд.</div><div id="auctionGrid" class="grid"></div></section>
 <section id="profile" class="pane hidden"><div class="box"><div class="profile"><div class="avatar" id="avatar">👤</div><div><h2 id="profileName">TON Collector</h2><div class="muted" id="profileTag">@collector</div><button id="editProfile">Изменить профиль</button></div></div><div class="statgrid"><div class="stat"><span class="hint">NFT</span><b id="statNft">0</b></div><div class="stat"><span class="hint">Сделки</span><b id="statDeals">0</b></div><div class="stat"><span class="hint">Рейтинг</span><b id="statRating">100</b></div></div></div><div class="section-title"><h2>Коллекционеры</h2></div><div id="leaderboard" class="box"></div></section>
 <section id="activity" class="pane hidden"><div class="section-title"><h2>История событий</h2></div><div id="history" class="box log"></div></section>
-<section id="admin" class="pane hidden"><div class="section-title"><h2>🛠 Панель администратора V9.6</h2><span class="badge">Локальный режим</span></div><div class="notice">Админ-панель управляет только локальным сохранением этой игры. Пароль такой же, как для пополнения TON.</div><div id="adminContent" class="box"><div class="empty">Введи пароль администратора.</div></div></section>
-</main><footer>V9.6 · Рыночная экономическая симуляция. TON, сделки, ставки и NFT виртуальные; подключения к Telegram и блокчейну нет.</footer>
+<section id="admin" class="pane hidden"><div class="section-title"><h2>🛠 Панель администратора V9.8.1</h2><span class="badge">Локальный режим</span></div><div class="notice">Админ-панель управляет только локальным сохранением этой игры. Пароль такой же, как для пополнения TON.</div><div id="adminContent" class="box"><div class="empty">Введи пароль администратора.</div></div></section>
+</main><footer>V9.8.1 · Рыночная экономическая симуляция. TON, сделки, ставки и NFT виртуальные; подключения к Telegram и блокчейну нет.</footer>
 <div id="modalRoot"></div><div id="toastRoot"></div><button id="cartFab" class="cart-fab" onclick="openCart()">🛒 Корзина <span id="cartCount" class="cart-count">0</span></button>
 <script>
 const $=id=>document.getElementById(id),fmt=n=>(+n||0).toFixed(2),uid=()=>Math.random().toString(36).slice(2,9);
@@ -274,7 +288,7 @@ const BASE={balance:150,profile:{name:"TON Collector",tag:"ton_collector",avatar
 ]};
 let s;try{s=JSON.parse(localStorage.getItem("tgifts_v7"))||structuredClone(BASE)}catch(e){s=JSON.parse(JSON.stringify(BASE))}
 s.market??=[];s.owned??=[];s.auctions??=[];s.offers??=[];s.ownListings??=[];s.cart??=[];s.logs??=[];s.bots??=JSON.parse(JSON.stringify(BASE.bots));s.marketIndex??=100;s.sessionVolume??=0;s.lastMarketPulse??=Date.now();s.auctions.forEach(a=>{a.escrow??={};a.step??=Math.max(.1,a.current*.05)});s.cart=s.cart.filter(id=>s.market.some(n=>n.id===id));
-function save(){localStorage.setItem("tgifts_v7",JSON.stringify(s));topbar()}
+function save(){localStorage.setItem("tgifts_v7",JSON.stringify(s));topbar();if(typeof updateCartUI==="function")updateCartUI()}
 function toast(t){$("toastRoot").innerHTML=`<div class="toast">${t}</div>`;setTimeout(()=>$("toastRoot").innerHTML="",2400)}
 function log(t){s.logs.unshift(new Date().toLocaleTimeString()+" · "+t);s.logs=s.logs.slice(0,100);save()}
 function makeNFT(c){
@@ -293,18 +307,23 @@ function card(n,extra=""){
  const rareBadge=n.rareId?'<span class="rare-id-badge">✦ RARE ID ×5</span>':"";
  return `<article class="nft-card ${canAddToCart?"market-style":""}"><div class="nft-face"><div class="nft-art">${nftVisual(n)}</div>${canAddToCart?'<span class="nft-clover">☘</span>':'<span class="nft-minted">Minted</span>'}</div><div class="nft-details">${canAddToCart?"":`<div class="nft-meta"><span class="pill">${n.rarity||"NFT"}</span><span class="hint">TON GIFTS</span></div>`}<h3>${n.name}</h3><div class="nft-serial ${serialClass}">${n.serial||"#000000"}${rareBadge}</div><div class="nft-buyrow"><div class="nft-price"><span class="diamond">◆</span>${fmt(ask)}</div><button class="nft-buy ${inCart?"is-added":""}" aria-label="Добавить в корзину" title="${canAddToCart?"Добавить в корзину":"NFT уже в инвентаре"}" ${canAddToCart?`onclick="addToCart('${n.id}')"`:"disabled"}>${canAddToCart?(inCart?"✓":"🛒"):"✓"}</button></div></div>${extra?`<div class="nft-actions">${extra}</div>`:""}</article>`
 }
-let nftFilterState={sort:'new',min:'',max:'',affordable:false,models:[],idMin:'',idMax:''};
+let nftFilterState={sort:"new",min:"",max:"",affordable:false,models:[],idMin:"",idMax:""};
 function renderMarket(){
- let q=$("search").value.toLowerCase(),a=s.market.filter(n=>n.name.toLowerCase().includes(q));
- if(nftFilterState.min!==''&&Number.isFinite(+nftFilterState.min))a=a.filter(n=>(+(n.ask??n.price))>=+nftFilterState.min);
- if(nftFilterState.max!==''&&Number.isFinite(+nftFilterState.max))a=a.filter(n=>(+(n.ask??n.price))<=+nftFilterState.max);
+ const q=$("search").value.toLowerCase();
+ let a=s.market.filter(n=>n.name.toLowerCase().includes(q));
+ if(nftFilterState.min!==""&&Number.isFinite(+nftFilterState.min))a=a.filter(n=>(+(n.ask??n.price))>=+nftFilterState.min);
+ if(nftFilterState.max!==""&&Number.isFinite(+nftFilterState.max))a=a.filter(n=>(+(n.ask??n.price))<=+nftFilterState.max);
  if(nftFilterState.affordable)a=a.filter(n=>(+(n.ask??n.price))<=s.balance);
  if(nftFilterState.models.length)a=a.filter(n=>nftFilterState.models.includes(n.name));
- if(nftFilterState.idMin!==''&&Number.isFinite(+nftFilterState.idMin))a=a.filter(n=>parseInt(String(n.serial||'').replace(/\D/g,''),10)>=+nftFilterState.idMin);
- if(nftFilterState.idMax!==''&&Number.isFinite(+nftFilterState.idMax))a=a.filter(n=>parseInt(String(n.serial||'').replace(/\D/g,''),10)<=+nftFilterState.idMax);
+ if(nftFilterState.idMin!==""&&Number.isFinite(+nftFilterState.idMin))a=a.filter(n=>parseInt(String(n.serial||"").replace(/\\D/g,""),10)>=+nftFilterState.idMin);
+ if(nftFilterState.idMax!==""&&Number.isFinite(+nftFilterState.idMax))a=a.filter(n=>parseInt(String(n.serial||"").replace(/\\D/g,""),10)<=+nftFilterState.idMax);
  const sort=nftFilterState.sort||$("sort").value;
- if(sort==='random')a.sort(()=>Math.random()-.5);else if(sort==='low')a.sort((x,y)=>(x.ask??x.price)-(y.ask??y.price));else if(sort==='high')a.sort((x,y)=>(y.ask??y.price)-(x.ask??x.price));else a.sort((x,y)=>y.created-x.created);
- $("marketGrid").innerHTML=a.length?a.map(n=>card(n)).join(""):`<div class="empty">По выбранным фильтрам NFT не найдены.</div>`;updateCartUI()
+ if(sort==="random")a.sort(()=>Math.random()-.5);
+ else if(sort==="low")a.sort((x,y)=>(x.ask??x.price)-(y.ask??y.price));
+ else if(sort==="high")a.sort((x,y)=>(y.ask??y.price)-(x.ask??x.price));
+ else a.sort((x,y)=>y.created-x.created);
+ $("marketGrid").innerHTML=a.length?a.map(n=>card(n)).join(""):`<div class="empty">По выбранным фильтрам NFT не найдены.</div>`;
+ updateCartUI()
 }
 function openNftFilters(){
  const models=[...new Set(s.market.map(n=>n.name))].sort();
@@ -313,35 +332,28 @@ function openNftFilters(){
  <div class="filter-field"><label>Хватает баланса</label><select id="nfAffordable"><option value="no">Не учитывать</option><option value="yes">Только то, что могу купить</option></select></div>
  <div class="filter-field"><label>Цена покупки — от</label><input id="nfMin" type="number" min="0" step="0.01" placeholder="0"></div>
  <div class="filter-field"><label>Цена покупки — до</label><input id="nfMax" type="number" min="0" step="0.01" placeholder="Без ограничения"></div>
- <div class="filter-field filter-wide"><label>NFT — модели</label><select id="nfModels" multiple size="${Math.min(6,Math.max(3,models.length))}">${models.map(m=>`<option value="${m}">${m}</option>`).join('')}</select><span class="hint">Можно выбрать несколько моделей (Ctrl / ⌘).</span></div>
+ <div class="filter-field filter-wide"><label>NFT — модели</label><select id="nfModels" multiple size="${Math.min(6,Math.max(3,models.length))}">${models.map(m=>`<option value="${m}">${m}</option>`).join("")}</select><span class="hint">Можно выбрать несколько моделей (Ctrl / ⌘).</span></div>
  <div class="filter-field"><label>Айди NFT — от</label><input id="nfIdMin" type="number" min="0" step="1" placeholder="1000"></div>
  <div class="filter-field"><label>Айди NFT — до</label><input id="nfIdMax" type="number" min="0" step="1" placeholder="9999"></div>
  </div><div class="filter-actions"><button onclick="resetNftFilters()">Сбросить</button><button class="primary" onclick="applyNftFilters()">Применить фильтры</button></div>`);
- $('nfSort').value=nftFilterState.sort;$('nfAffordable').value=nftFilterState.affordable?'yes':'no';$('nfMin').value=nftFilterState.min;$('nfMax').value=nftFilterState.max;$('nfIdMin').value=nftFilterState.idMin;$('nfIdMax').value=nftFilterState.idMax;
- [...$('nfModels').options].forEach(o=>o.selected=nftFilterState.models.includes(o.value));
+ $("nfSort").value=nftFilterState.sort;
+ $("nfAffordable").value=nftFilterState.affordable?"yes":"no";
+ $("nfMin").value=nftFilterState.min;$("nfMax").value=nftFilterState.max;
+ $("nfIdMin").value=nftFilterState.idMin;$("nfIdMax").value=nftFilterState.idMax;
+ [...$("nfModels").options].forEach(o=>o.selected=nftFilterState.models.includes(o.value));
 }
-function applyNftFilters(){const min=$('nfMin').value,max=$('nfMax').value,idMin=$('nfIdMin').value,idMax=$('nfIdMax').value;if((min!==''&&+min<0)||(max!==''&&+max<0)||(min!==''&&max!==''&&+min>+max)||(idMin!==''&&idMax!==''&&+idMin>+idMax))return toast('Проверь диапазоны фильтров');nftFilterState={sort:$('nfSort').value,min,max,affordable:$('nfAffordable').value==='yes',models:[...$('nfModels').selectedOptions].map(o=>o.value),idMin,idMax};$('sort').value=nftFilterState.sort==='random'?'new':nftFilterState.sort;closeModal();renderMarket();toast('Фильтры NFT применены')}
-function resetNftFilters(){nftFilterState={sort:'new',min:'',max:'',affordable:false,models:[],idMin:'',idMax:''};$('search').value='';$('sort').value='new';closeModal();renderMarket();toast('Фильтры сброшены')}
-function openMiniGames(){modal(`<div class="dev-modal"><span class="dev-tool">🛠️</span><div class="dev-title">Режим в разработке</div><div class="dev-sub">Мини-игры скоро появятся здесь. Следи за обновлениями!</div></div>`)}
-function updateCartUI(){const count=(s.cart||[]).length;const el=$("cartCount");if(el)el.textContent=count;}
-function addToCart(id){if(!s.market.some(n=>n.id===id))return toast("Этот NFT больше не продаётся");s.cart??=[];if(s.cart.includes(id))return toast("NFT уже в корзине");s.cart.push(id);save();renderMarket();toast("NFT добавлен в корзину")}
-function removeFromCart(id){s.cart=(s.cart||[]).filter(x=>x!==id);save();renderMarket();openCart()}
-function openCart(){
- const items=(s.cart||[]).map(id=>s.market.find(n=>n.id===id)).filter(Boolean);
- s.cart=(s.cart||[]).filter(id=>s.market.some(n=>n.id===id));
- const total=items.reduce((sum,n)=>sum+(+n.ask||0),0);
- const body=items.length?`<div class="cart-list">${items.map(n=>`<div class="cart-item"><div><b>${n.name}</b><div class="hint ${n.rareId?"rare-id":""}">${n.serial}${n.rareId?" · ✦ RARE ID ×5":""} · ${fmt(n.ask)} TON</div></div><button class="danger" onclick="removeFromCart('${n.id}')">Убрать</button></div>`).join("")}</div><div class="row"><b>Итого</b><b class="price">${fmt(total)} TON</b></div><button class="primary" style="width:100%;margin-top:12px" onclick="checkoutCart()">Купить всё</button>`:`<div class="empty">Корзина пока пуста. Добавь NFT кнопкой 🛒 в карточке.</div>`;
- modal(`<h2>🛒 Корзина (${items.length})</h2>${body}`);updateCartUI();
+function applyNftFilters(){
+ const min=$("nfMin").value,max=$("nfMax").value,idMin=$("nfIdMin").value,idMax=$("nfIdMax").value;
+ if((min!==""&&+min<0)||(max!==""&&+max<0)||(min!==""&&max!==""&&+min>+max)||(idMin!==""&&idMax!==""&&+idMin>+idMax))return toast("Проверь диапазоны фильтров");
+ nftFilterState={sort:$("nfSort").value,min,max,affordable:$("nfAffordable").value==="yes",models:[...$("nfModels").selectedOptions].map(o=>o.value),idMin,idMax};
+ $("sort").value=nftFilterState.sort==="random"?"new":nftFilterState.sort;
+ closeModal();renderMarket();toast("Фильтры NFT применены")
 }
-function checkoutCart(){
- const items=(s.cart||[]).map(id=>s.market.find(n=>n.id===id)).filter(Boolean);
- if(!items.length)return toast("Корзина пуста");
- const total=items.reduce((sum,n)=>sum+(+n.ask||0),0);
- if(s.balance<total)return toast("Недостаточно TON для покупки всей корзины");
- for(const n of items){s.balance-=+n.ask;s.owned.push({...n,price:+n.ask});s.market=s.market.filter(x=>x.id!==n.id);s.deals++;s.sessionVolume=(s.sessionVolume||0)+1;log("Куплен NFT "+n.name+" из корзины за "+fmt(n.ask)+" TON")}
- s.cart=[];save();closeModal();render();toast("Куплено NFT: "+items.length)
+function resetNftFilters(){
+ nftFilterState={sort:"new",min:"",max:"",affordable:false,models:[],idMin:"",idMax:""};
+ $("search").value="";$("sort").value="new";closeModal();renderMarket();toast("Фильтры сброшены")
 }
-function renderInventory(){
+ function renderInventory(){
 $("inventoryGrid").innerHTML=s.owned.length?s.owned.map(n=>{
 let listing=s.ownListings.find(x=>x.nftId===n.id);
 let controls=listing?`<div class="notice">Твоя цена: <b>${fmt(listing.ask)} TON</b> · приватное предложение</div><button class="danger" style="width:100%" onclick="unlistOwn('${n.id}')">Снять с продажи</button>`:`<div class="formrow"><input id="ownAsk_${n.id}" type="number" min=".1" step=".1" value="${fmt(n.price)}" placeholder="Цена TON"><button class="primary" onclick="listOwn('${n.id}')">Выставить по своей цене</button></div>`;
@@ -397,7 +409,7 @@ function botMarketTrade(){
  save();renderMarket();updateMarketStats();
 }
 
-function render(){topbar();renderMarket();renderInventory();renderAuctions();renderProfile();updateMarketStats();$("history").innerHTML=s.logs.map(x=>`<div>${x}</div>`).join("")||"История пока пуста"}
+function render(){topbar();renderMarket();updateCartUI();renderInventory();renderAuctions();renderProfile();updateMarketStats();$("history").innerHTML=s.logs.map(x=>`<div>${x}</div>`).join("")||"История пока пуста"}
 function buy(id){
  const i=s.market.findIndex(x=>x.id===id);
  if(i<0)return toast("Этот NFT уже куплен или снят с продажи");
@@ -412,7 +424,7 @@ function buy(id){
  s.deals=(s.deals||0)+1;
  s.sessionVolume=(s.sessionVolume||0)+1;
  log("Куплен NFT "+n.name+" за "+fmt(price)+" TON");
- save();render();toast("NFT куплен");
+ save();closeModal();render();toast("NFT куплен");
 }
 function startAuction(id){let n=s.owned.find(x=>x.id===id);if(!n)return;modal(`<h2>Выставить NFT на аукцион</h2><p>${n.emoji} ${n.name} ${n.serial}</p><div class="formrow"><label>Стартовая цена TON <input id="startPrice" type="number" min=".1" value="${fmt(n.price)}"></label></div><div class="formrow"><label>Длительность <select id="duration"><option value="60">1 минута</option><option value="180">3 минуты</option><option value="600" selected>10 минут</option><option value="1800">30 минут</option></select></label></div><button class="primary" onclick="confirmAuction('${id}')">Запустить торги</button>`)}
 function confirmAuction(id){let i=s.owned.findIndex(n=>n.id===id),start=+$("startPrice").value,dur=+$("duration").value;if(i<0||!(start>0))return toast("Проверь цену");let nft=s.owned.splice(i,1)[0];s.ownListings=s.ownListings.filter(x=>x.nftId!==id);s.offers=s.offers.filter(x=>x.nftId!==id);s.auctions.push({id:uid(),nft,seller:s.profile.name,start,current:start,step:Math.max(.1,start*.05),end:Date.now()+dur*1000,leader:null,leaderName:null,leaderType:null,escrow:{},settled:false,lastBotBid:0});log("NFT "+nft.name+" выставлен на аукцион");save();closeModal();render();toast("Аукцион запущен")}
@@ -463,6 +475,18 @@ function rejectOffer(id){s.offers=s.offers.filter(o=>o.id!==id);save();renderInv
 function counterOffer(id){let o=s.offers.find(x=>x.id===id),n=o&&s.owned.find(x=>x.id===o.nftId),b=o&&s.bots.find(x=>x.id===o.botId);if(!o||!n||!b)return;modal(`<h2>Встречная цена</h2><p>${b.name} предлагает ${fmt(o.price)} TON за ${n.name}</p><div class="formrow"><input id="counterPrice" type="number" min=".1" step=".1" value="${fmt(Math.min(b.budget,n.price*1.12))}"><button class="primary" onclick="submitCounter('${id}')">Отправить</button></div>`)}
 function submitCounter(id){let i=s.offers.findIndex(x=>x.id===id),o=s.offers[i],n=o&&s.owned.find(x=>x.id===o.nftId),b=o&&s.bots.find(x=>x.id===o.botId),v=+$("counterPrice").value;if(!n||!b||!(v>0))return toast("Некорректная цена");if(v>0&&v<=n.price*b.factor*1.25){s.balance+=+(v*.98).toFixed(2);s.sessionVolume=(s.sessionVolume||0)+1;s.owned=s.owned.filter(x=>x.id!==n.id);s.ownListings=s.ownListings.filter(x=>x.nftId!==n.id);s.offers=s.offers.filter(x=>x.nftId!==n.id);s.deals++;log(b.name+" принял встречную цену "+fmt(v)+" TON за "+n.name);closeModal();render();toast("Бот согласился! NFT продан")}else{closeModal();toast(b.name+" отказался от встречной цены");s.offers.splice(i,1);save();renderInventory()}}
 function modal(content){$("modalRoot").innerHTML=`<div class="modalback" onclick="if(event.target===this)closeModal()"><div class="modal">${content}<div style="text-align:right;margin-top:14px"><button onclick="closeModal()">Закрыть</button></div></div></div>`}function closeModal(){$("modalRoot").innerHTML=""}
+function openMiniGames(){
+ document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="minigames"));
+ updateCartUI();
+ modal(`<div class="dev-modal">
+   <span class="dev-tool" aria-hidden="true">🛠️</span>
+   <div class="dev-title">Режим в разработке</div>
+   <div class="dev-sub">Мини-игры уже готовятся — совсем скоро здесь появятся новые развлечения!</div>
+   <div class="dev-progress" aria-hidden="true"><span></span></div>
+   <div class="dev-caption">🎮 Следи за обновлениями</div>
+ </div>`);
+}
+
 $("addFunds").onclick=()=>modal(`<h2>Доступ к пополнению</h2><p class="muted">Введи пароль, чтобы продолжить.</p><div class="formrow"><input id="fundPassword" type="password" inputmode="numeric" autocomplete="off" placeholder="Пароль"><button class="primary" onclick="verifyFundsPassword()">Продолжить</button></div>`);
 function verifyFundsPassword(){
  const entered=$("fundPassword").value;
@@ -470,13 +494,15 @@ function verifyFundsPassword(){
  modal(`<h2>Пополнить баланс</h2><p class="muted">Виртуальные TON для игры.</p><div class="formrow"><input id="fund" type="number" min="1" value="100"><button class="primary" onclick="let v=+$('fund').value;if(v>0){s.balance+=v;save();closeModal();toast('Добавлено '+fmt(v)+' TON')}else{toast('Укажи сумму больше нуля')}">Добавить</button></div>`);
 }
 $("createAuction").onclick=()=>{if(!s.owned.length)return toast("Сначала купи NFT в маркете");modal(`<h2>Выбери NFT</h2><div class="formrow"><select id="auctionSelect">${s.owned.map(n=>`<option value="${n.id}">${n.name} ${n.serial}</option>`).join("")}</select><button class="primary" onclick="let id=$('auctionSelect').value;closeModal();startAuction(id)">Далее</button></div>`)};
-$("search").oninput=renderMarket;$("sort").onchange=renderMarket;
+$("search").oninput=renderMarket;$("sort").onchange=()=>{nftFilterState.sort=$("sort").value;renderMarket()};
 $("editProfile").onclick=()=>modal(`<h2>Профиль коллекционера</h2><div class="formrow"><input id="pname" value="${s.profile.name}" placeholder="Имя"><input id="ptag" value="${s.profile.tag}" placeholder="username"></div><div class="formrow"><select id="pavatar"><option>👤</option><option>🐸</option><option>🐳</option><option>🦊</option><option>👑</option><option>🚀</option><option>💎</option></select><button class="primary" onclick="s.profile.name=$('pname').value||'Collector';s.profile.tag=$('ptag').value.replace('@','')||'collector';s.profile.avatar=$('pavatar').value;save();renderProfile();closeModal();toast('Профиль обновлён')">Сохранить</button></div>`);
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
  if(b.dataset.tab==="admin"){openAdminGate();return;}
  if(b.dataset.tab==="minigames"){openMiniGames();return;}
  document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b));
  document.querySelectorAll(".pane").forEach(x=>x.classList.toggle("hidden",x.id!==b.dataset.tab));
+ // Показываем кнопку корзины только если открыта вкладка «Маркет».
+ updateCartUI();
 });
 if(s.market.length<50){
  const sellers=["TON Drops","Gift Factory","Collector Hub","NFT Vault"];
@@ -489,9 +515,14 @@ if(s.market.length<50){
 }
 save();render();
 let nextDrop=Date.now()+60000;
-setInterval(()=>{let left=Math.max(0,nextDrop-Date.now());$("dropCountdown").textContent="Следующий дроп: "+timeLeft(left);if(Date.now()>=nextDrop){createDrop();nextDrop=Date.now()+60000}},500);
-setInterval(()=>{botBidTick();settle();document.querySelectorAll("[data-timer]").forEach(el=>{let a=s.auctions.find(x=>x.id===el.dataset.timer);if(a)el.textContent=timeLeft(a.end-Date.now())})},1000);
-setInterval(generateOffer,60000);setInterval(botMarketTrade,19000);setInterval(marketPulse,5000);
+ let simulationActive=!document.hidden, simulationPausedAt=null;
+ function pauseSimulation(){if(simulationActive){simulationActive=false;simulationPausedAt=Date.now();}}
+ function resumeSimulation(){if(!simulationActive){const pausedFor=Date.now()-(simulationPausedAt||Date.now());nextDrop+=pausedFor;s.auctions.forEach(a=>{if(!a.settled)a.end+=pausedFor});simulationActive=true;simulationPausedAt=null;save();}}
+ document.addEventListener("visibilitychange",()=>document.hidden?pauseSimulation():resumeSimulation());
+ window.addEventListener("blur",pauseSimulation);window.addEventListener("focus",()=>{if(!document.hidden)resumeSimulation()});
+setInterval(()=>{if(!simulationActive)return;let left=Math.max(0,nextDrop-Date.now());$("dropCountdown").textContent="Следующий дроп: "+timeLeft(left);if(Date.now()>=nextDrop){createDrop();nextDrop=Date.now()+60000}},500);
+setInterval(()=>{if(!simulationActive)return;botBidTick();settle();document.querySelectorAll("[data-timer]").forEach(el=>{let a=s.auctions.find(x=>x.id===el.dataset.timer);if(a)el.textContent=timeLeft(a.end-Date.now())})},1000);
+setInterval(()=>{if(simulationActive)generateOffer()},60000);setInterval(()=>{if(simulationActive)botMarketTrade()},19000);setInterval(()=>{if(simulationActive)marketPulse()},5000);
 window.addEventListener("beforeunload",save);
 
 
@@ -528,11 +559,26 @@ function card(n,extra=""){
  return `<article class="nft-card"><div class="nft-face"><div class="nft-art">${nftVisual(n)}</div><span class="nft-minted">Minted</span></div><div class="nft-details"><div class="nft-meta"><span class="pill">${n.rarity||"NFT"}</span><span class="hint">TON GIFTS</span></div><h3>${n.name}</h3><div class="nft-serial ${serialClass}">${n.serial||"#000000"}${rareBadge}</div><div class="nft-buyrow"><button type="button" class="nft-price nft-price-buy" aria-label="Купить NFT за ${fmt(ask)} TON" title="Купить NFT" ${canAddToCart?`onclick="buy('${n.id}')"`:"disabled"}><span class="diamond">◆</span>${fmt(ask)}</button><button type="button" class="nft-buy ${inCart?"is-added":""}" aria-label="Добавить в корзину" title="${canAddToCart?(inCart?"Уже в корзине":"Добавить в корзину"):"NFT уже не продаётся"}" ${canAddToCart?`onclick="addToCart('${n.id}')"`:"disabled"}>${canAddToCart?(inCart?"✓":"🛒"):"✓"}</button></div></div>${extra?`<div class="nft-actions">${extra}</div>`:""}</article>`;
 }
 function updateCartUI(){
- const count=(s.cart||[]).filter(id=>s.market.some(n=>n.id===id)).length;
+ // Кнопка корзины показывается только во вкладке «Маркет».
+ const validCart=(s.cart||[]).filter(id=>s.market.some(n=>n.id===id));
+ s.cart=validCart;
+ const count=validCart.length;
  const el=$("cartCount"),fab=$("cartFab");
  if(el)el.textContent=count;
- if(fab)fab.classList.toggle("visible",count>0);
+ const marketActive=document.querySelector('.tab.active')?.dataset.tab==="market";
+ if(fab){const shouldShow=!!marketActive&&count>0;fab.classList.toggle("visible",shouldShow);fab.style.display=shouldShow?"block":"none";}
 }
+function openCart(){
+ const items=(s.cart||[]).map(id=>s.market.find(n=>n.id===id)).filter(Boolean);
+ const total=items.reduce((sum,n)=>sum+(Number.isFinite(+n.ask)&&+n.ask>0?+n.ask:+n.price||0),0);
+ const rows=items.map(n=>`<div class="cart-item"><div><b>${n.emoji||"🎁"} ${n.name}</b><div class="hint">${n.serial||""} · ${fmt(Number.isFinite(+n.ask)&&+n.ask>0?+n.ask:+n.price)} TON</div></div><button class="danger" onclick="removeFromCart('${n.id}')">Убрать</button></div>`).join("");
+ const content=items.length
+  ? `<div class="cart-list">${rows}</div><div class="notice">Товаров: <b>${items.length}</b><br>Итого: <b class="price">${fmt(total)} TON</b><br>Баланс: <b>${fmt(s.balance)} TON</b></div><div class="formrow"><button onclick="closeModal()">Продолжить покупки</button><button class="primary" onclick="checkoutCart()">Оформить покупку</button></div>`
+  : `<div class="empty">Корзина пуста. Добавь NFT из маркета — они появятся здесь.</div><div class="formrow"><button class="primary" onclick="closeModal()">Перейти к покупкам</button></div>`;
+ updateCartUI();
+ modal(`<h2>🛒 Корзина</h2>${content}`);
+}
+function removeFromCart(id){s.cart=(s.cart||[]).filter(x=>x!==id);save();renderMarket();openCart()}
 function addToCart(id){
  if(!s.market.some(n=>n.id===id))return toast("Этот NFT больше не продаётся");
  s.cart??=[];if(s.cart.includes(id))return toast("NFT уже в корзине");
@@ -580,6 +626,7 @@ let adminUnlocked=false;
 function openAdminGate(){
  document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab==="admin"));
  document.querySelectorAll(".pane").forEach(x=>x.classList.toggle("hidden",x.id!=="admin"));
+ updateCartUI();
  if(adminUnlocked){renderAdmin();return;}
  modal(`<h2>🛠 Доступ администратора</h2><p class="muted">Введи пароль администратора.</p><div class="formrow"><input id="adminPassword" type="password" inputmode="numeric" autocomplete="off" placeholder="Пароль" onkeydown="if(event.key==='Enter')verifyAdmin()"><button class="primary" onclick="verifyAdmin()">Войти</button></div>`);
 }
@@ -597,13 +644,13 @@ function renderAdmin(){
  if(!adminUnlocked){root.innerHTML='<div class="empty">Введи пароль администратора.</div>';return;}
  const active=s.auctions.map(a=>`<div class="auction-admin-row"><b>${a.nft.name} ${a.nft.serial}</b><div class="hint">Ставка: ${fmt(a.current)} TON · лидер: ${a.leaderName||"нет"} · осталось ${timeLeft(a.end-Date.now())}</div><div class="admin-actions"><button onclick="adminExtendAuction('${a.id}')">+5 минут</button><button class="gold" onclick="adminFinishAuction('${a.id}')">Завершить</button><button class="danger" onclick="adminCancelAuction('${a.id}')">Отменить</button></div></div>`).join("")||'<div class="empty">Активных аукционов нет.</div>';
  const allNfts=[...s.owned.map(n=>({n,where:'owned'})),...s.market.map(n=>({n,where:'market'}))];
- root.innerHTML=`<div class="admin-head"><h2>🛡️ Центр управления V9.6</h2><div class="hint">Полный контроль над локальной экономикой, балансом, NFT, маркетом и симуляцией.</div><div class="admin-toolbar"><button class="gold" onclick="renderAdmin()">↻ Обновить панель</button><button onclick="adminExportSave()">⬇ Экспорт сохранения</button><button onclick="adminImportSave()">⬆ Импорт сохранения</button></div></div>${adminRenderStats()}
+ root.innerHTML=`<div class="admin-head"><h2>🛡️ Центр управления V9.7</h2><div class="hint">Полный контроль над локальной экономикой, балансом, NFT, маркетом и симуляцией.</div><div class="admin-toolbar"><button class="gold" onclick="renderAdmin()">↻ Обновить панель</button><button onclick="adminExportSave()">⬇ Экспорт сохранения</button><button onclick="adminImportSave()">⬆ Импорт сохранения</button></div></div>${adminRenderStats()}
  <div class="admin-grid">
  <div class="admin-box"><h3>💰 Управление балансом</h3><div class="hint">Текущий баланс: <b>${fmt(s.balance)} TON</b></div><input id="adminTonAmount" type="number" min="0" step="0.01" value="100" placeholder="Сумма TON"><div class="admin-actions"><button class="primary" onclick="adminGiveTon()">＋ Начислить</button><button class="danger" onclick="adminRemoveTon()">－ Списать</button></div><input id="adminSetBalance" type="number" min="0" step="0.01" value="${(+s.balance).toFixed(2)}" placeholder="Новый баланс"><button class="gold" style="width:100%" onclick="adminSetPlayerBalance()">Установить баланс</button><div class="admin-note">Списание не позволит уйти балансу ниже нуля.</div></div>
  <div class="admin-box"><h3>🎁 Генератор NFT</h3><select id="adminNftType">${CATALOG.map((c,i)=>`<option value="${i}">${c.name}</option>`).join("")}</select><select id="adminNftTarget"><option value="owned">Выдать в инвентарь</option><option value="market">Добавить в маркет</option></select><label class="hint"><input id="adminRare" type="checkbox" style="width:auto"> Гарантированный редкий ID</label><input id="adminCreatePrice" type="number" min="0.01" step="0.01" placeholder="Цена (пусто = авто)"><button class="primary" style="width:100%" onclick="adminCreateNft()">Создать NFT</button></div>
  <div class="admin-box"><h3>🧾 Редактор NFT и цен</h3><select id="adminEditNft" size="5">${allNfts.map(({n,where})=>`<option value="${where}:${n.id}">${where==='owned'?'Инвентарь':'Маркет'} · ${n.name} ${n.serial} · ${fmt(where==='market'?n.ask:n.price)} TON</option>`).join("")}</select><input id="adminEditPrice" type="number" min="0.01" step="0.01" placeholder="Новая цена TON"><div class="admin-actions"><button class="gold" onclick="adminChangeNftPrice()">Изменить цену</button><button class="danger" onclick="adminDeleteSelectedNft()">Удалить NFT</button></div></div>
  <div class="admin-box"><h3>📈 Экономика маркета</h3><input id="adminPriceFactor" type="number" min="0.01" step="0.05" value="1.10" placeholder="Множитель, например 1.1"><div class="admin-actions"><button onclick="adminScaleMarket()">Применить к маркету</button><button onclick="adminScaleAllPrices()">Маркет + инвентарь</button></div><input id="adminMarketCount" type="number" min="1" max="100" value="10" placeholder="Количество NFT"><button class="primary" style="width:100%" onclick="adminAddMarketCount()">Добавить NFT в маркет</button><div class="admin-note">Множитель 1.10 = поднять цены на 10%; 0.90 = снизить на 10%.</div></div>
- <div class="admin-box"><h3>🤖 Коллекционеры и боты</h3>${s.bots.map((b,i)=>`<div class="row"><div><b>${b.name}</b><div class="hint">Бюджет: ${fmt(b.budget)} TON</div></div><input style="width:110px" id="adminBot_${i}" type="number" min="0" step="1" value="${b.budget}" aria-label="Бюджет бота"></div>`).join("")}<button class="gold" style="width:100%;margin-top:8px" onclick="adminSaveBotBudgets()">Сохранить бюджеты ботов</button></div>
+  <div class="admin-box"><h3>🤖 Коллекционеры и боты</h3>${s.bots.map(b=>`<div class="row"><div><b>${b.name}</b><div class="hint">${b.style}</div></div><span class="badge">Автоматический режим</span></div>`).join("")}<div class="admin-note">Изменение и пополнение балансов ботов отключено.</div></div>
  <div class="admin-box"><h3>🔨 Управление аукционами</h3>${active}</div>
  <div class="admin-box"><h3>🧹 Сервис и статистика</h3><div class="admin-actions"><button onclick="adminRefundPlayerBids()">Вернуть мои ставки</button><button onclick="adminResetSessionStats()">Сбросить статистику сессии</button><button onclick="adminClearLogs()">Очистить историю</button></div><div class="admin-note">Сброс статистики не удаляет NFT и баланс.</div></div>
  <div class="admin-box admin-danger-zone"><h3>⚠️ Опасная зона</h3><div class="admin-actions"><button class="danger" onclick="adminClearMarket()">Очистить маркет</button><button class="danger" onclick="adminResetGame()">Полный сброс игры</button></div><div class="admin-note">Полный сброс удалит локальный прогресс и вернёт начальное сохранение. Требуется подтверждение.</div></div>
@@ -616,7 +663,6 @@ function adminDeleteSelectedNft(){const el=$('adminEditNft');if(!el||!el.value)r
 function adminScaleMarket(){const f=+$('adminPriceFactor').value;if(!(f>0))return toast('Множитель должен быть больше нуля');s.market.forEach(n=>{n.ask=+((+n.ask||n.price)*f).toFixed(2);n.price=+(n.price*f).toFixed(2)});log('Администратор применил множитель цен маркета ×'+f);save();render();renderAdmin();toast('Цены маркета обновлены')}
 function adminScaleAllPrices(){const f=+$('adminPriceFactor').value;if(!(f>0))return toast('Множитель должен быть больше нуля');[...s.market,...s.owned].forEach(n=>{n.price=+(n.price*f).toFixed(2);if(Number.isFinite(+n.ask))n.ask=+(n.ask*f).toFixed(2)});s.ownListings.forEach(l=>l.ask=+(l.ask*f).toFixed(2));log('Администратор изменил все цены ×'+f);save();render();renderAdmin();toast('Все цены обновлены')}
 function adminAddMarketCount(){let count=Math.max(1,Math.min(100,Math.floor(+$('adminMarketCount').value||1)));for(let i=0;i<count;i++){const n=makeNFT(CATALOG[Math.floor(Math.random()*CATALOG.length)]);n.ask=+(n.price*(1.015+Math.random()*.075)).toFixed(2);n.seller='Admin Drop';s.market.unshift(n)}log('Администратор добавил '+count+' NFT в маркет');save();render();renderAdmin();toast('Добавлено NFT: '+count)}
-function adminSaveBotBudgets(){s.bots.forEach((b,i)=>{const v=+$('adminBot_'+i)?.value;if(Number.isFinite(v)&&v>=0)b.budget=+v.toFixed(2)});log('Администратор обновил бюджеты коллекционеров');save();render();renderAdmin();toast('Бюджеты ботов сохранены')}
 function adminResetSessionStats(){if(!confirm('Сбросить объём сессии и индекс маркета?'))return;s.sessionVolume=0;s.marketIndex=100;log('Администратор сбросил статистику сессии');save();render();renderAdmin();toast('Статистика сброшена')}
 function adminClearLogs(){if(!confirm('Очистить всю историю действий?'))return;s.logs=[];save();render();renderAdmin();toast('История очищена')}
 function adminExportSave(){const blob=new Blob([JSON.stringify(s,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='ton-gifts-v95-save.json';a.click();URL.revokeObjectURL(url);toast('Экспорт сохранения подготовлен')}
@@ -664,7 +710,7 @@ if(typeof render==='function')render();
 
 
 
-// ===== V9.6 PATCH: purchase confirmation, collector offers, unlimited bots, serial-ID economy =====
+// ===== V9.7 PATCH: purchase confirmation, collector offers, unlimited bots, serial-ID economy =====
 function v96SerialTier(serial){
  const d=String(serial||'').replace(/\D/g,'');
  if(!d)return {mult:1,label:'Обычный ID'};
@@ -748,7 +794,7 @@ function botBidTick(){
   log(b.name+' (безлимитный баланс) повышает ставку до '+fmt(amount)+' TON за '+a.nft.name);save();renderAuctions();
  }
 }
-// Reprice old saved NFTs exactly once for the V9.6 serial-number economy.
+// Reprice old saved NFTs exactly once for the V9.7 serial-number economy.
 if(s.economyVersion!=='9.6'){
  for(const n of [...(s.market||[]),...(s.owned||[])]){
   const oldMult=Number(n.idMultiplier)||1;
@@ -761,4 +807,301 @@ if(s.economyVersion!=='9.6'){
  s.economyVersion='9.6';save();
 }
 
-</script></body></html>
+</script>
+<style>
+/* V9.8.1 settings */
+header{position:sticky}
+.settings-button{flex:0 0 auto;width:44px;height:44px;min-height:44px;padding:0;border-radius:50%;font-size:23px;display:grid;place-items:center;background:linear-gradient(145deg,#302710,#17130b);border:1px solid #92732b;color:#ffdc72}
+.settings-button:active{transform:rotate(25deg)}
+:root[data-theme="green"]{--bg:#07120d;--panel:#10251a;--panel2:#173324;--line:#315d40;--text:#edfff1;--muted:#a0c5a9;--cyan:#66e69a;--green:#8ff0a9;--gold:#8ff0a9;--red:#ff7777}
+:root[data-theme="red"]{--bg:#13090b;--panel:#291316;--panel2:#35191e;--line:#70404a;--text:#fff0f1;--muted:#d0aeb2;--cyan:#ff8794;--green:#ffb0a7;--gold:#ff858e;--red:#ff7777}
+:root[data-theme="green"] body{background:radial-gradient(ellipse at 12% -8%,#164c2b 0,transparent 34%),radial-gradient(ellipse at 92% 18%,#102d1b 0,transparent 32%),#07120d}
+:root[data-theme="red"] body{background:radial-gradient(ellipse at 12% -8%,#61202a 0,transparent 34%),radial-gradient(ellipse at 92% 18%,#35131a 0,transparent 32%),#13090b}
+:root[data-theme="green"] .hero{background:linear-gradient(115deg,#123c25,#102319 55%,#0c1710);border-color:#39734a}
+:root[data-theme="red"] .hero{background:linear-gradient(115deg,#51202a,#2b1419 55%,#180d10);border-color:#87414e}
+:root[data-theme="green"] .tab.active,:root[data-theme="green"] .primary,:root[data-theme="green"] .gold{background:linear-gradient(135deg,#9af0ad,#3b9c5c);border-color:#b4ffc4;color:#082011}
+:root[data-theme="red"] .tab.active,:root[data-theme="red"] .primary,:root[data-theme="red"] .gold{background:linear-gradient(135deg,#ffabb0,#c74758);border-color:#ffc0c4;color:#2a080e}
+:root[data-theme="green"] .market-stat b,:root[data-theme="green"] .section-title h2,:root[data-theme="green"] .wallet b{color:#9af0ad}
+:root[data-theme="red"] .market-stat b,:root[data-theme="red"] .section-title h2,:root[data-theme="red"] .wallet b{color:#ffabb0}
+.settings-options{display:grid;gap:14px}
+.settings-group{padding:13px;border:1px solid var(--line);border-radius:13px;background:#0002}
+.settings-group h3{margin:0 0 10px;font-size:15px}
+.settings-choices{display:flex;gap:8px;flex-wrap:wrap}
+.settings-choices button{flex:1;min-width:105px}
+.settings-choices button.selected{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+
+
+
+<style>
+/* V9.8.1: complete theme-aware pricing and selected-setting indicators */
+:root[data-theme="yellow"]{
+  --price-bg:linear-gradient(135deg,#ffe58a,#d69c20);
+  --price-text:#241a06;--price-border:#ffe28c;--price-glow:#d5a52c33;
+}
+:root[data-theme="green"]{
+  --price-bg:linear-gradient(135deg,#a7f4b6,#329657);
+  --price-text:#082011;--price-border:#c0ffd0;--price-glow:#45c87844;
+}
+:root[data-theme="red"]{
+  --price-bg:linear-gradient(135deg,#ffb0b7,#c83d51);
+  --price-text:#2a080e;--price-border:#ffc4ca;--price-glow:#f05b7044;
+}
+.nft-card .price,.nft-card .nft-price,
+.nft-card.market-style .nft-price,
+.nft-card.market-style .nft-price-buy{
+  background:var(--price-bg)!important;color:var(--price-text)!important;
+  border:1px solid var(--price-border)!important;box-shadow:0 5px 16px var(--price-glow)!important;
+}
+.nft-card .price *, .nft-card .nft-price *,
+.nft-card.market-style .nft-price *{color:var(--price-text)!important}
+:root[data-theme="green"] .nft-card .nft-buy.is-added{background:#b8f7c7!important;color:#092414!important}
+:root[data-theme="red"] .nft-card .nft-buy.is-added{background:#ffc0c5!important;color:#3a0710!important}
+.settings-current{margin:0 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:#0002;font-size:13px;color:var(--muted)}
+.settings-current b{color:var(--text)}
+.settings-choices button.selected{border:2px solid var(--gold)!important;box-shadow:0 0 0 3px #ffffff12,0 0 16px #ffffff18!important}
+.settings-choices button .chosen-mark{display:inline-block;margin-left:5px;font-weight:900}
+:root[data-theme="green"] .settings-choices button.selected{border-color:#8ff0a9!important}
+:root[data-theme="red"] .settings-choices button.selected{border-color:#ff8794!important}
+</style>
+<script>
+(() => {
+  const dict = {
+    "Это всего лишь симулятор и никак не связан с Telegram.":"This is only a simulator and is not affiliated with Telegram.",
+    "Баланс:":"Balance:","Твой NFT-маркет в золотом стиле":"Your NFT marketplace in a golden style",
+    "Открывай коллекции, собирай редкие подарки и управляй своими сделками.":"Explore collections, collect rare gifts, and manage your trades.",
+    "в твоём инвентаре":"in your inventory","Следующий дроп:":"Next drop:",
+    "Маркет":"Market","Инвентарь":"Inventory","Аукционы":"Auctions","Профиль":"Profile",
+    "История":"History","Мини-игры":"Mini-games","Админ":"Admin",
+    "Новые NFT в маркете":"New NFTs on the market",
+    "Динамические цены · NPC-покупатели · комиссия 2%":"Dynamic prices · NPC buyers · 2% fee",
+    "Лотов в продаже":"Listings for sale","Средняя цена":"Average price",
+    "Рыночный индекс":"Market index","Сделок за сессию":"Session trades",
+    "Найти NFT…":"Find an NFT…","⚙ Фильтры NFT":"⚙ NFT filters",
+    "Мои NFT":"My NFTs","Не выставляются в общий маркет":"Not listed on the public market",
+    "Входящие предложения":"Incoming offers","＋ Выставить NFT":"＋ List an NFT",
+    "Изменить профиль":"Edit profile","Коллекционеры":"Collectors",
+    "История событий":"Activity history","Локальный режим":"Local mode",
+    "Панель администратора V9.8.1":"Administrator panel V9.8.1",
+    "Закрыть":"Close","Сохранить":"Save","Отправить":"Send",
+    "Дешевле":"Lowest price","Дороже":"Highest price","Новые сначала":"Newest first",
+    "Введи пароль администратора.":"Enter the administrator password.",
+    "Режим в разработке":"Under development",
+    "Мини-игры уже готовятся — совсем скоро здесь появятся новые развлечения!":"Mini-games are in development — new activities are coming soon!",
+    "🎮 Следи за обновлениями":"🎮 Stay tuned for updates",
+    "Язык":"Language","Цвет интерфейса":"Interface color",
+    "Русский":"Russian","Английский":"English","Жёлтый":"Yellow","Зелёный":"Green","Красный":"Red",
+    "Готово":"Done","В твоём инвентаре":"In your inventory","Продолжить":"Continue",
+    "Добавить":"Add","Профиль коллекционера":"Collector profile","Сделки":"Trades",
+    "Рейтинг":"Rating","Поиск":"Search","Цена TON":"Price in TON",
+    "Цена:":"Price:","Твоя цена:":"Your price:","приватное предложение":"private offer",
+    "Снять с продажи":"Remove listing","Выставить по своей цене":"List at your price",
+    "Выставить на аукцион":"List in auction","Инвентарь пока пуст. Загляни в маркет — новые NFT появляются каждую минуту.":"Your inventory is empty. Visit the market — new NFTs appear every minute.",
+    "Пока нет входящих предложений. Выставь NFT по своей цене — коллекционеры смогут предложить свою.":"There are no incoming offers yet. List an NFT at your price so collectors can make offers.",
+    "Активных аукционов нет. Выставь один из своих NFT.":"There are no active auctions. List one of your NFTs.",
+    "Активных аукционов нет.":"There are no active auctions.",
+    "История пока пуста":"Your history is empty",
+    "По выбранным фильтрам NFT не найдены.":"No NFTs match the selected filters.",
+    "Проверь диапазоны фильтров":"Check the filter ranges",
+    "Фильтры NFT применены":"NFT filters applied","Фильтры сброшены":"Filters reset",
+    "Укажи корректную цену в TON":"Enter a valid price in TON",
+    "NFT выставлен по твоей цене":"NFT listed at your price","NFT снят с продажи":"NFT listing removed",
+    "Этот NFT уже куплен или снят с продажи":"This NFT has already been bought or delisted",
+    "Не удалось определить цену NFT":"Could not determine the NFT price",
+    "Недостаточно TON":"Not enough TON","Куплен NFT":"NFT purchased","NFT куплен":"NFT purchased",
+    "Проверь цену":"Check the price","Аукцион запущен":"Auction started",
+    "Аукцион завершён":"Auction ended","Ставка принята":"Bid accepted",
+    "Нельзя делать ставку на собственный аукцион":"You cannot bid on your own auction",
+    "Минимальная ставка":"Minimum bid","Твоя ставка":"Your bid",
+    "Аукцион без ставок — NFT возвращён в инвентарь":"Auction ended without bids — NFT returned to inventory",
+    "Неверный пароль":"Incorrect password","Сначала купи NFT в маркете":"Buy an NFT from the market first",
+    "Выбери NFT":"Choose an NFT","Далее":"Next","Корзина пуста":"Cart is empty",
+    "Корзина":"Cart","Перейти к покупкам":"Continue shopping",
+    "Этот NFT больше не продаётся":"This NFT is no longer for sale",
+    "NFT уже в корзине":"NFT is already in the cart","NFT добавлен в корзину":"NFT added to cart",
+    "Новые предложения от коллекционеров":"New offers from collectors",
+    "Админ-панель открыта":"Admin panel opened","Маркет":"Market",
+    "Укажи сумму больше нуля":"Enter an amount greater than zero",
+    "На балансе недостаточно TON":"Insufficient TON balance",
+    "Укажи корректный баланс":"Enter a valid balance","Баланс обновлён":"Balance updated",
+    "Выбери NFT и укажи цену больше нуля":"Choose an NFT and enter a price greater than zero",
+    "NFT не найден":"NFT not found","Цена NFT обновлена":"NFT price updated",
+    "Выбери NFT":"Choose an NFT","Точно удалить выбранный NFT?":"Are you sure you want to delete the selected NFT?",
+    "NFT удалён":"NFT deleted","Множитель должен быть больше нуля":"Multiplier must be greater than zero",
+    "Цены маркета обновлены":"Market prices updated","Все цены обновлены":"All prices updated",
+    "Добавлено NFT:":"NFTs added:","Статистика сброшена":"Statistics reset",
+    "История очищена":"History cleared","Экспорт сохранения подготовлен":"Save export prepared",
+    "Сохранение импортировано":"Save imported","Не удалось прочитать файл сохранения":"Could not read the save file",
+    "NFT создан":"NFT created","Аукцион отменён":"Auction cancelled",
+    "Редкий ID":"Rare ID","Обычный ID":"Regular ID","Ультраредкий ID":"Ultra-rare ID",
+    "Повтор цифр":"Repeating digits","Последовательный ID":"Sequential ID",
+    "Зеркальный ID":"Mirror ID","Парный ID":"Paired ID",
+    "Щедрый кит":"Generous whale","Осторожный коллекционер":"Cautious collector",
+    "Любит торговаться":"Enjoys bargaining","Охотник за редкостями":"Rare-item hunter",
+    "Собирает необычные NFT":"Collects unusual NFTs",
+    "Вы":"You","Бот":"Bot","Коллекционер TON":"TON Collector",
+    "Новые сначала":"Newest first","Найти NFT…":"Find an NFT…",
+    "Цена TON":"Price in TON","Стартовая цена TON":"Starting price in TON",
+    "Длительность":"Duration","1 минута":"1 minute","3 минуты":"3 minutes",
+    "10 минут":"10 minutes","30 минут":"30 minutes","Запустить торги":"Start auction",
+    "Принять":"Accept","Отказать":"Decline","Торг":"Make a counteroffer",
+    "Встречная цена":"Counteroffer","Некорректная цена":"Invalid price",
+    "Настройки":"Settings","Выбрано":"Selected","Тема":"Theme",
+    "Рыночная экономическая симуляция. TON, сделки, ставки и NFT виртуальные; подключения к Telegram и блокчейну нет.":"Market economy simulation. TON, trades, bids, and NFTs are virtual; there is no Telegram or blockchain connection.",
+    "Выставить NFT на аукцион":"List NFT in auction","Выставить на продажу":"List for sale",
+    "Выставить по своей цене":"List at your price","Снять с продажи":"Remove from sale",
+    "Управление":"Management","Панель администратора":"Administrator panel",
+    "Доступ к пополнению":"Access to adding funds","Введи пароль, чтобы продолжить.":"Enter the password to continue.",
+    "Пароль":"Password","Пополнить":"Add funds","Пополнение":"Add funds",
+    "Создать NFT":"Create NFT","Удалить NFT":"Delete NFT","Изменить цену":"Change price",
+    "Изменить баланс":"Change balance","Начислить TON":"Credit TON","Списать TON":"Deduct TON",
+    "Добавить NFT":"Add NFT","Очистить маркет":"Clear market","Очистить историю":"Clear history",
+    "Сбросить статистику":"Reset statistics","Экспорт сохранения":"Export save","Импорт сохранения":"Import save",
+    "Полностью сбросить игру? Баланс, NFT, ставки и история будут удалены.":"Reset the entire game? Balance, NFTs, bids, and history will be deleted.",
+    "Последнее подтверждение: сбросить локальное сохранение?":"Final confirmation: reset the local save?",
+    "Удалить все NFT из маркета?":"Delete all NFTs from the market?",
+    "Очистить всю историю действий?":"Clear the entire activity history?",
+    "Сбросить объём сессии и индекс маркета?":"Reset session volume and market index?",
+    "Добавить 10 NFT в маркет":"Add 10 NFTs to the market",
+    "Выбери NFT":"Choose an NFT","Выбери коллекцию":"Choose a collection",
+    "Выбери тип NFT":"Choose NFT type","Редкость":"Rarity","Коллекция":"Collection",
+    "Инвентарь ·":"Inventory ·","Маркет ·":"Market ·","Все":"All",
+    "Покупка":"Purchase","Купить":"Buy","Продать":"Sell","Цена":"Price",
+    "Стартовая цена TON":"Starting price in TON","Длительность":"Duration",
+    "Минут":"minutes","час":"hour","часа":"hours","дней":"days",
+    "Лидер ставки":"Highest bidder","Текущая ставка":"Current bid",
+    "Ставка":"Bid","Сделать ставку":"Place bid","Ваша ставка":"Your bid",
+    "Профиль":"Profile","Имя":"Name","Никнейм":"Username","Сохранить профиль":"Save profile",
+    "Изменить профиль":"Edit profile","Коллекционеры":"Collectors",
+    "Топ коллекционеров":"Top collectors","Очков":"points",
+    "Сделок за сессию":"Trades this session","Рыночный индекс":"Market index",
+    "Средняя цена":"Average price","Лотов в продаже":"Listings for sale",
+    "Дроп":"Drop","Новый дроп:":"New drop:","В магазин поступило новых NFT:":"New NFTs added to the market:",
+    "прислал предложение":"sent an offer","предлагает купить твой NFT":"wants to buy your NFT",
+    "Продан":"Sold","игроку":"to player","Продажа завершена: +":"Sale completed: +",
+    "Предложение отклонено":"Offer declined","Некорректная цена":"Invalid price",
+    "принял встречную цену":"accepted the counteroffer","Бот согласился! NFT продан":"The bot agreed! NFT sold",
+    "отказался от встречной цены":"declined the counteroffer",
+    "купил":"bought","с рынка за":"from the market for","Куплен NFT":"NFT purchased",
+    "Ставка принята":"Bid accepted","автоматически повышает ставку до":"automatically raises the bid to",
+    "за":"for","после комиссии 2%":"after the 2% fee",
+    "Укажи сумму больше нуля":"Enter an amount greater than zero",
+    "На балансе недостаточно TON":"Insufficient TON balance",
+    "Администратор списал":"Administrator deducted","Списано":"Deducted",
+    "Администратор изменил баланс:":"Administrator changed the balance:",
+    "Администратор начислил":"Administrator credited","Начислено":"Credited",
+    "Администратор создал":"Administrator created","Администратор удалил NFT":"Administrator deleted NFT",
+    "Администратор добавил":"Administrator added","Администратор очистил маркет":"Administrator cleared the market",
+    "Администратор продлил аукцион":"Administrator extended the auction",
+    "Администратор отменил аукцион":"Administrator cancelled the auction",
+    "Администратор вернул ставки игрока:":"Administrator refunded player bids:",
+    "Редкий ID ×":"Rare ID ×","Экономика V9: цены обновлены по рыночным floor-ценам коллекций":"V9 economy: prices updated to collection market floor prices",
+    "Следи за обновлениями":"Stay tuned for updates","Твоя ставка":"Your bid",
+    "Найти NFT…":"Find an NFT…","Введи пароль администратора.":"Enter the administrator password."
+  };
+
+  function translateString(value) {
+    let result = value;
+    const keys = Object.keys(dict).sort((a,b)=>b.length-a.length);
+    for (const key of keys) {
+      if (result.includes(key)) result = result.split(key).join(dict[key]);
+    }
+    return result;
+  }
+  function translateNode(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      if (node.nodeValue && /[А-Яа-яЁё]/.test(node.nodeValue)) {
+        const translated = translateString(node.nodeValue);
+        if (translated !== node.nodeValue) node.nodeValue = translated;
+      }
+      return;
+    }
+    if (node.nodeType !== Node.ELEMENT_NODE) return;
+    for (const attr of ["placeholder","title","aria-label","alt"]) {
+      const value = node.getAttribute(attr);
+      if (value && /[А-Яа-яЁё]/.test(value)) node.setAttribute(attr, translateString(value));
+    }
+    if (node.tagName === "OPTION" && node.textContent) {
+      node.textContent = translateString(node.textContent);
+    }
+    const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(translateNode);
+  }
+  function translateWholeGame() {
+    if (localStorage.getItem("ton_gifts_language") !== "en") return;
+    translateNode(document.body);
+  }
+  window.setSimulatorLanguage = function(value) {
+    localStorage.setItem("ton_gifts_language", value);
+    location.reload();
+  };
+  window.setSimulatorTheme = function(value) {
+    localStorage.setItem("ton_gifts_theme", value);
+    document.documentElement.dataset.theme = value;
+    if (typeof window.closeModal === "function") window.closeModal();
+    window.openSettings();
+  };
+  window.openSettings = function() {
+    const lang = localStorage.getItem("ton_gifts_language") || "ru";
+    const theme = localStorage.getItem("ton_gifts_theme") || "yellow";
+    const en = lang === "en";
+    const names = en ? {yellow:"Yellow",green:"Green",red:"Red"} : {yellow:"Жёлтый",green:"Зелёный",red:"Красный"};
+    const langName = en ? "English" : "Русский";
+    const themeName = names[theme] || names.yellow;
+    const mark = (yes) => yes ? '<span class="chosen-mark">✓</span>' : "";
+    const html = `
+      <h2>⚙ ${en ? "Settings" : "Настройки"}</h2>
+      <div class="settings-current">${en ? "Currently selected" : "Сейчас выбрано"}: <b>${langName}</b> · <b>${themeName}</b></div>
+      <div class="settings-options">
+        <div class="settings-group">
+          <h3>${en ? "Language" : "Язык"}</h3>
+          <div class="settings-choices">
+            <button type="button" class="${lang==="ru"?"selected":""}" onclick="setSimulatorLanguage('ru')">🇷🇺 Русский${mark(lang==="ru")}</button>
+            <button type="button" class="${lang==="en"?"selected":""}" onclick="setSimulatorLanguage('en')">🇬🇧 English${mark(lang==="en")}</button>
+          </div>
+        </div>
+        <div class="settings-group">
+          <h3>${en ? "Interface color" : "Цвет интерфейса"}</h3>
+          <div class="settings-choices">
+            <button type="button" class="${theme==="yellow"?"selected":""}" onclick="setSimulatorTheme('yellow')">🟡 ${names.yellow}${mark(theme==="yellow")}</button>
+            <button type="button" class="${theme==="green"?"selected":""}" onclick="setSimulatorTheme('green')">🟢 ${names.green}${mark(theme==="green")}</button>
+            <button type="button" class="${theme==="red"?"selected":""}" onclick="setSimulatorTheme('red')">🔴 ${names.red}${mark(theme==="red")}</button>
+          </div>
+        </div>
+      </div>`;
+    window.modal(html);
+  };
+
+  // Apply the saved theme immediately, and translate existing and future UI updates.
+  const theme = localStorage.getItem("ton_gifts_theme") || "yellow";
+  document.documentElement.dataset.theme = theme;
+  translateWholeGame();
+  if (localStorage.getItem("ton_gifts_language") === "en") document.title = "TON GIFTS Simulator V9.8.1 ENGLISH FIX";
+  const observer = new MutationObserver(records => {
+    if (localStorage.getItem("ton_gifts_language") !== "en") return;
+    const visited = new Set();
+    for (const record of records) {
+      if (record.type === "characterData") {
+        const node = record.target;
+        if (!visited.has(node)) {
+          visited.add(node);
+          translateNode(node);
+        }
+      }
+      record.addedNodes.forEach(node => {
+        if (node.nodeType === Node.ELEMENT_NODE || node.nodeType === Node.TEXT_NODE) {
+          if (!visited.has(node)) {
+            visited.add(node);
+            translateNode(node);
+          }
+        }
+      });
+    }
+  });
+  observer.observe(document.body, {subtree:true,childList:true,characterData:true});
+})();
+</script>
+
+</body></html>
